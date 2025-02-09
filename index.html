@@ -44,8 +44,8 @@
 
 <body>
     <!-- Navbar section -->
-    <header class="mb-9 bg-[#FFF9F4] px-[140px]">
-        <div class="navbar ">
+    <header class="mb-9 bg-[#FFF9F4]">
+        <div class="navbar">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -65,13 +65,10 @@
                     <div>
                         <img src="images/logo-header.png" alt="">
                     </div>
-                    <div>
+                    <div class="hidden sm:block">
                         <a class="text-[26px] font-normal">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
                     </div>
                 </div>
-
-
-
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 sora-font text-[20px] gap-8">
@@ -81,35 +78,43 @@
                 </ul>
             </div>
             <div class="navbar-end gap-3 sora-font">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_27)">
-                        <path
-                            d="M22.555 13.662L20.655 6.826C20.0981 4.82333 18.8877 3.06429 17.2163 1.82847C15.5449 0.592652 13.5084 -0.0490142 11.4304 0.00546594C9.3525 0.0599461 7.35239 0.807446 5.74805 2.12915C4.1437 3.45085 3.02719 5.2709 2.57598 7.3L1.10498 13.915C0.942497 14.6459 0.946254 15.404 1.11597 16.1333C1.2857 16.8626 1.61705 17.5445 2.08556 18.1286C2.55408 18.7126 3.1478 19.184 3.82289 19.508C4.49798 19.8319 5.23721 20 5.98598 20H7.09998C7.3295 21.1303 7.94271 22.1465 8.83572 22.8764C9.72874 23.6063 10.8466 24.005 12 24.005C13.1533 24.005 14.2712 23.6063 15.1642 22.8764C16.0573 22.1465 16.6705 21.1303 16.9 20H17.738C18.5088 20.0001 19.2692 19.8219 19.9597 19.4794C20.6503 19.137 21.2523 18.6395 21.7188 18.0259C22.1853 17.4122 22.5036 16.699 22.6488 15.942C22.794 15.185 22.7612 14.4047 22.555 13.662ZM12 22C11.3817 21.9974 10.7794 21.8039 10.2753 21.4459C9.77121 21.0879 9.39007 20.5829 9.18398 20H14.816C14.6099 20.5829 14.2288 21.0879 13.7247 21.4459C13.2206 21.8039 12.6182 21.9974 12 22ZM20.126 16.815C19.8473 17.1847 19.4863 17.4843 19.0716 17.69C18.6569 17.8957 18.1999 18.0018 17.737 18H5.98598C5.53677 17.9999 5.0933 17.899 4.68832 17.7046C4.28334 17.5102 3.92719 17.2273 3.64614 16.8769C3.3651 16.5265 3.16634 16.1174 3.06454 15.6798C2.96274 15.2423 2.9605 14.7875 3.05798 14.349L4.52798 7.733C4.88233 6.13921 5.75929 4.7096 7.01944 3.67145C8.27959 2.63329 9.85061 2.04617 11.4828 2.00341C13.1149 1.96066 14.7145 2.46472 16.0273 3.43547C17.3401 4.40622 18.2907 5.78795 18.728 7.361L20.628 14.197C20.7535 14.6424 20.7735 15.1109 20.6864 15.5653C20.5992 16.0198 20.4074 16.4477 20.126 16.815Z"
-                            fill="#111111" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_1_27">
-                            <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_1_29)">
-                        <path
-                            d="M23.707 22.293L17.738 16.324C19.3647 14.3346 20.1644 11.7961 19.9719 9.23356C19.7793 6.67103 18.6092 4.28053 16.7036 2.55652C14.798 0.83251 12.3026 -0.0931084 9.73367 -0.0288765C7.16472 0.0353553 4.71873 1.08452 2.90164 2.90161C1.08455 4.7187 0.035382 7.16469 -0.0288498 9.73364C-0.0930816 12.3026 0.832537 14.798 2.55655 16.7036C4.28056 18.6092 6.67106 19.7793 9.23359 19.9718C11.7961 20.1644 14.3346 19.3646 16.324 17.738L22.293 23.707C22.4816 23.8892 22.7342 23.99 22.9964 23.9877C23.2586 23.9854 23.5094 23.8802 23.6948 23.6948C23.8803 23.5094 23.9854 23.2586 23.9877 22.9964C23.99 22.7342 23.8892 22.4816 23.707 22.293ZM10 18C8.41778 18 6.87106 17.5308 5.55546 16.6518C4.23987 15.7727 3.21449 14.5233 2.60899 13.0615C2.00349 11.5997 1.84506 9.99113 2.15374 8.43928C2.46243 6.88743 3.22435 5.46197 4.34317 4.34315C5.46199 3.22433 6.88746 2.4624 8.4393 2.15372C9.99115 1.84504 11.5997 2.00346 13.0615 2.60896C14.5233 3.21446 15.7727 4.23984 16.6518 5.55544C17.5308 6.87103 18 8.41775 18 10C17.9976 12.121 17.154 14.1544 15.6543 15.6542C14.1545 17.154 12.121 17.9976 10 18Z"
-                            fill="black" />
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_1_29">
-                            <rect width="24" height="24" fill="white" />
-                        </clipPath>
-                    </defs>
-                </svg>
+                <div class="hidden sm:block">
+                    <div class="flex gap-4">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_27)">
+                                <path
+                                    d="M22.555 13.662L20.655 6.826C20.0981 4.82333 18.8877 3.06429 17.2163 1.82847C15.5449 0.592652 13.5084 -0.0490142 11.4304 0.00546594C9.3525 0.0599461 7.35239 0.807446 5.74805 2.12915C4.1437 3.45085 3.02719 5.2709 2.57598 7.3L1.10498 13.915C0.942497 14.6459 0.946254 15.404 1.11597 16.1333C1.2857 16.8626 1.61705 17.5445 2.08556 18.1286C2.55408 18.7126 3.1478 19.184 3.82289 19.508C4.49798 19.8319 5.23721 20 5.98598 20H7.09998C7.3295 21.1303 7.94271 22.1465 8.83572 22.8764C9.72874 23.6063 10.8466 24.005 12 24.005C13.1533 24.005 14.2712 23.6063 15.1642 22.8764C16.0573 22.1465 16.6705 21.1303 16.9 20H17.738C18.5088 20.0001 19.2692 19.8219 19.9597 19.4794C20.6503 19.137 21.2523 18.6395 21.7188 18.0259C22.1853 17.4122 22.5036 16.699 22.6488 15.942C22.794 15.185 22.7612 14.4047 22.555 13.662ZM12 22C11.3817 21.9974 10.7794 21.8039 10.2753 21.4459C9.77121 21.0879 9.39007 20.5829 9.18398 20H14.816C14.6099 20.5829 14.2288 21.0879 13.7247 21.4459C13.2206 21.8039 12.6182 21.9974 12 22ZM20.126 16.815C19.8473 17.1847 19.4863 17.4843 19.0716 17.69C18.6569 17.8957 18.1999 18.0018 17.737 18H5.98598C5.53677 17.9999 5.0933 17.899 4.68832 17.7046C4.28334 17.5102 3.92719 17.2273 3.64614 16.8769C3.3651 16.5265 3.16634 16.1174 3.06454 15.6798C2.96274 15.2423 2.9605 14.7875 3.05798 14.349L4.52798 7.733C4.88233 6.13921 5.75929 4.7096 7.01944 3.67145C8.27959 2.63329 9.85061 2.04617 11.4828 2.00341C13.1149 1.96066 14.7145 2.46472 16.0273 3.43547C17.3401 4.40622 18.2907 5.78795 18.728 7.361L20.628 14.197C20.7535 14.6424 20.7735 15.1109 20.6864 15.5653C20.5992 16.0198 20.4074 16.4477 20.126 16.815Z"
+                                    fill="#111111" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_27">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_29)">
+                                <path
+                                    d="M23.707 22.293L17.738 16.324C19.3647 14.3346 20.1644 11.7961 19.9719 9.23356C19.7793 6.67103 18.6092 4.28053 16.7036 2.55652C14.798 0.83251 12.3026 -0.0931084 9.73367 -0.0288765C7.16472 0.0353553 4.71873 1.08452 2.90164 2.90161C1.08455 4.7187 0.035382 7.16469 -0.0288498 9.73364C-0.0930816 12.3026 0.832537 14.798 2.55655 16.7036C4.28056 18.6092 6.67106 19.7793 9.23359 19.9718C11.7961 20.1644 14.3346 19.3646 16.324 17.738L22.293 23.707C22.4816 23.8892 22.7342 23.99 22.9964 23.9877C23.2586 23.9854 23.5094 23.8802 23.6948 23.6948C23.8803 23.5094 23.9854 23.2586 23.9877 22.9964C23.99 22.7342 23.8892 22.4816 23.707 22.293ZM10 18C8.41778 18 6.87106 17.5308 5.55546 16.6518C4.23987 15.7727 3.21449 14.5233 2.60899 13.0615C2.00349 11.5997 1.84506 9.99113 2.15374 8.43928C2.46243 6.88743 3.22435 5.46197 4.34317 4.34315C5.46199 3.22433 6.88746 2.4624 8.4393 2.15372C9.99115 1.84504 11.5997 2.00346 13.0615 2.60896C14.5233 3.21446 15.7727 4.23984 16.6518 5.55544C17.5308 6.87103 18 8.41775 18 10C17.9976 12.121 17.154 14.1544 15.6543 15.6542C14.1545 17.154 12.121 17.9976 10 18Z"
+                                    fill="black" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_29">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
                 <a
-                    class="btn border border-[#FFDC26] text-black bg-transparent px-[30px] py-[10px] font-normal text-[20px]">Login</a>
-                <a class="btn bg-common-button text-black px-[30px] py-[10px] font-normal text-[20px]">Register</a>
+                    class="hidden sm:block btn border border-[#FFDC26] text-black bg-transparent px-[30px] py-[10px] font-normal text-[20px]">
+                    Login
+                </a>
+                <a class="hidden sm:block btn bg-common-button text-black px-[30px] py-[10px] font-normal text-[20px]">
+                    Register
+                </a>
             </div>
-        </div>
+            <div>
     </header>
 
     <main>
@@ -120,7 +125,7 @@
                     <div>
                         <div class="absolute">
                             <div>
-                                <h1 class="adlam-font mt-16 mb-2 text-5xl font-normal pl-4 lg:pl-0  ">Pamper
+                                <h1 class="adlam-font mt-16 mb-2 text-[48px] font-normal  ">Pamper
                                     Your Pet, <br> Because They Deserve <br> the Best</h1>
                                 <p class="my-4 sora-font text-[20px] pl-4 lg:pl-0">
                                     Discover a world of treats, toys, and essentials handpicked for <br> your furry
@@ -134,18 +139,19 @@
                 </div>
             </div>
         </section>
+        <!-- RESPONSIVE DONE -->
 
         <!-- Category section -->
-        <section class="ml-[140px] mr-[140px]">
+        <section class="md:container mx-auto ">
             <div class="adlam-font text-[36px] mt-[140px] mb-[48px]">
                 <h3>Browse By Categories</h3>
             </div>
             <!-- Card container -->
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 sm:gap-[10px] md:gap-6 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-x-6">
                 <!-- Card 1 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images//dog-cartoon.png" alt="" />
                         </figure>
                     </div>
@@ -155,79 +161,80 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images/fish-cartoon.png" alt="" />
                         </figure>
                     </div>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title adlam-font">Fish</h2>
+                        <h2 class="card-title adlam-font">Dog</h2>
                         <p class="sora-font">3 items</p>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images/cat-cartoon.png" alt="" />
                         </figure>
                     </div>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title adlam-font">Cat</h2>
+                        <h2 class="card-title adlam-font">Dog</h2>
                         <p class="sora-font">3 items</p>
                     </div>
                 </div>
                 <!-- Card 4 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images/bird-cartoon.png" alt="" />
                         </figure>
                     </div>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title adlam-font">Birds</h2>
+                        <h2 class="card-title adlam-font">Dog</h2>
                         <p class="sora-font">3 items</p>
                     </div>
                 </div>
                 <!-- Card 5 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images/mouse-cartoon.png" alt="" />
                         </figure>
                     </div>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title adlam-font">Small Pet</h2>
+                        <h2 class="card-title adlam-font">Dog</h2>
                         <p class="sora-font">3 items</p>
                     </div>
                 </div>
                 <!-- Card 6 -->
-                <div class="card bg-base-100 shadow-sm lg:w-48 mt-12 pt-8 bg-[#F9DF8A]">
-                    <div class="avatar justify-center mx-12">
-                        <figure class="w-32 p-6 rounded-full  bg-white ">
+                <div class="card bg-base-100 shadow-sm pt-[32px] lg:w-50 mt-[48px] bg-[#F9DF8A]">
+                    <div class="avatar justify-center mx-[50px]">
+                        <figure class="w-32 p-[24px] rounded-full  bg-white ">
                             <img src="images/rabbit-cartoon.png" alt="" />
                         </figure>
                     </div>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title adlam-font">Rabbit</h2>
+                        <h2 class="card-title adlam-font">Dog</h2>
                         <p class="sora-font">3 items</p>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- RESPONSIVE DONE -->
 
         <!-- Trending pet products -->
-        <section class="bg-[#FFF9F4] p-[140px] mt-[126px]">
+        <section class="lg:bg-[#FFF9F4] p-[140px] mt-[126px]">
             <div class="md:container mx-auto">
                 <div class="adlam-font text-[36px] mb-[48px]">
                     <h3>Trending Pet Products</h3>
                 </div>
                 <!-- Card container -->
-                <div class="grid grid-cols-2 gap-2 lg:grid-cols-5 lg:gap-3 grid-rows-7 lg:grid-rows-3">
+                <div class="grid grid-cols-2 grid-rows-7 gap-2 lg:grid-cols-5 lg:gap-3  lg:grid-rows-3">
                     <!-- Col span Card -->
                     <div
-                        class="card  col-span-2 row-span-3 bg-[#F9DF8A] relative  w-[450px] h-[450px] lg:w-[500px] lg:h-[400px] sm:c">
+                        class="card  col-span-2 row-span-3 bg-[#F9DF8A] relative  w-[500px] h-[500px] lg:w-[550px] lg:h-[450px]">
                         <div class="hero">
                             <div class="hero-content">
                                 <img src="images/cute-pet-small.png" class="absolute right-4 bottom-6" />
@@ -248,9 +255,9 @@
                             <img class="hidden lg:block bg-[#FFF9F4]" src="images/dog-cartoon.png" alt="Movie" />
                         </figure>
                         <figure>
-                            <img class="block bg-[#FFF9F4] w-8 lg:hidden" src="images/pet-couch.png" alt="Movie" />
+                            <img class="block bg-[#FFF9F4] w-[32px] lg:hidden" src="images/pet-couch.png" alt="Movie" />
                         </figure>
-                        <div class="mt-6">
+                        <div class="mt-[24px]">
                             <div class="flex">
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -417,27 +424,30 @@
                 </div>
             </div>
         </section>
+        <!-- RESPONSIVE DONE -->
 
         <!-- Price Section -->
-        <section class="my-[140px] mx-[140px]">
-            <h3 class="adlam-font text-[36px] mb-[47px]">Everyday Low Price</h3>
+        <section class="md:container mx-auto">
+            <h3 class="adlam-font text-[36px] mb-[47px] mt-20 lg:mt-[128px]">Everyday Low Price</h3>
             <!-- Card Container -->
-            <div class="flex gap-6">
+            <div class="flex gap-6 lg:flex">
                 <!-- left card -->
-                <div class="flex bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg w-[900px]">
-                    <div class="my-[137px] ml-[88px]">
-                        <p class="sora-font text-[20px]">Under Price</p>
+                <div
+                    class="flex bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-lg w-[450px] lg:w-[900px] h-[420px] lg:gap-20 pl-4 mr-4 mb-10 ml-4">
+                    <div class="pt-[40px] lg:pt-[128px] lg:pl-[80px]">
+                        <p class="sora-font text-[20px] lg:block">Under Price</p>
                         <h3 class="adlam-font text-[32px]">Pet Grooming Mitt</h3>
-                        <p class="adlam-font text-white text-[24px]">(Easy Hair Removal)</p>
-                        <h3 class="adlam-font text-[56px]">$7.99</h3>
+                        <p class="adlam-font hidden lg:block text-white text-[24px] lg:text-[20px]">(Easy Hair Removal)
+                        </p>
+                        <h3 class="adlam-font text-[56px] lg:text-[#000000] text-[#FFFFFF]">$7.99</h3>
                     </div>
-                    <div>
-                        <img src="images/cute-dog-mid.png" alt="">
-                    </div>
+                    <img class="w-[300px] h-[300px] lg:w-[382px] lg:h-[420px] lg:mb-[16px] lg:mt-[8px] mr-[16px] mt-[48px] mb-[8px] object-cover"
+                        src="images/cute-dog-mid.png" alt="">
                 </div>
                 <!-- right card -->
-                <div class="flex bg-gradient-to-tl from-[#F9DF8A] to-[#FFF9F4] rounded-lg w-[700px]">
-                    <div>
+                <div
+                    class="w-[450px] lg:w-[500px] h-[400px] flex bg-gradient-to-tl from-[#F9DF8A] to-[#FFF9F4] rounded-lg p-[16px] mx-[16px]">
+                    <div class="lg:pl-[50px] pt-[66px]">
                         <h3 class="adlam-font text-[32px] mt-[55px] ml-[50px]">T-Shirt for Dogs</h3>
                         <h3 class="ml-[50px] adlam-font text-[56px] text-[#FFDC26]">$7.99</h3>
                     </div>
@@ -447,34 +457,38 @@
                 </div>
             </div>
         </section>
+        <!-- RESPONSIVE DONE -->
 
         <!-- Pawsome card -->
         <section class="md:container mx-auto">
             <!-- Card container -->
-            <div class="bg-[#FFF9F4] flex gap-28 rounded-2xl ml-[140px] mr-[140px] relative top-56 -mt-52 mx-5">
-                <div class="mt-[38px] ml-[90px] mb-[38px]">
-                    <img src="images/cute-pet-mid.png" alt="">
-                </div>
-                <div class="mt-[77px]">
-                    <h3 class="mb-[20px] adlam-font text-[36px]">
-                        Get Pawsome News!
-                    </h3>
-                    <p class="mb-[38px] sora-font text-[20px]">
-                        Exclusive training tips, ticks, product deals and more.
-                    </p>
-                    <input type="text" placeholder="Enter email" class="input w-[472px]" />
-                    <button class="btn bg-common-button sora-font text-[20px] mb-[134px] mt-[20px]">
-                        Subscribe
-                    </button>
+            <div class="bg-[#FFF9F4] gap-28 rounded-2xl relative top-[224px] -mt-54 mx-[20px]">
+                <div class="pt-[40px] lg:flex">
+                    <div class="pl-[80px] lg:pl-[40px]">
+                        <img src="images/cute-pet-mid.png" alt="">
+                    </div>
+                    <div class="lg:mt-[77px] pl-[8px] text-center lg:text-left  lg:pl-[80px] ">
+                        <h3 class="mb-[20px] adlam-font text-[36px]">
+                            Get Pawsome News!
+                        </h3>
+                        <p class="py-[24px] sora-font text-[20px]">
+                            Exclusive training tips, ticks, product deals and more.
+                        </p>
+                        <input type="text" placeholder="Enter email" class="input w-[472px]" />
+                        <button class="btn bg-common-button sora-font text-[20px] mb-[134px] mt-[20px] lg:text-left">
+                            Subscribe
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
+        <!-- RESPONSIVE DONE -->
 
         <!-- Footer section -->
-        <footer class="footer bg-[#F9DF8A] pl-4 lg:pl-60p-10 mt-0 pt-80 pb-10">
-            <nav class=" ml-[140px]">
+        <footer class="footer bg-[#F9DF8A] p-[40px] pt-[320px] pb-[40px] pl-[16px] lg:pl-[240px]  mt-[0px] ">
+            <nav>
                 <div class="flex items-center gap-3 mb-[24px]">
-                    <img src="images/logo-footer.png" alt="" class="w-10 h-10">
+                    <img src="images/logo-footer.png" alt="" class="w-[40px] h-[40px]">
                     <h4 class="text-[26px] font-normal sora-font">Browse<span class="text-[#FFDC26]">4</span>Pets</h4>
                 </div>
                 <p class="text-[20px] sora-font">Discover a world of treats, toys, and <br> essentials
@@ -485,7 +499,7 @@
                 <a class="link link-hover">Breeds</a>
                 <a class="link link-hover">Contact us</a>
             </nav>
-            <nav class="">
+            <nav>
                 <p class="text-[16px] font-medium sora-font">Follow Us</p>
                 <div class="flex gap-7 text-[20px]">
                     <a><i class="fa-brands fa-facebook"></i></a>
@@ -495,7 +509,7 @@
                 </div>
             </nav>
         </footer>
+        <!-- RESPONSIVE DONE -->
     </main>
 </body>
-
 </html>
